@@ -18,7 +18,7 @@ for i in headers:
     titles.append(title)
 
 print(titles)  
-# ouput is ['Company', 'PriceRs.', 'Day HighRs.', 'Company', 'PriceRs.', 'Day LowRs.', 'Company', 'priceRs.', 'Change%', 'Company', 'priceRs.', 'Change%']
+# output is ['Company', 'PriceRs.', 'Day HighRs.', 'Company', 'PriceRs.', 'Day LowRs.', 'Company', 'priceRs.', 'Change%', 'Company', 'priceRs.', 'Change%']
 # we required only first 3 columns, so filter it in next step
 
 titles_modified = titles[:3]
