@@ -10,7 +10,7 @@ soup = BeautifulSoup(r.text,"lxml")
 
 table = soup.find("table",class_ = "table table-sm table-hover screenertable")
 
-headers = soup.find_all("th")
+headers = soup.find_all("th")      #table header
 
 titles = []
 for i in headers:
@@ -28,7 +28,7 @@ print(titles_modified)
 df = pd.DataFrame(columns=titles_modified)
 print(df)
 
-rows = table.find_all("tr")
+rows = table.find_all("tr")      #table rows
 
 # print(rows)
 
