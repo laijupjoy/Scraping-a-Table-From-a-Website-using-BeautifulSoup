@@ -32,7 +32,7 @@ rows = table.find_all("tr")      #table rows
 
 # print(rows)
 
-for i in rows[1:]:
+for i in rows[1:]:    # 0th row is header, not cosider here, so select from 1st frow
     # print(i.text)
     data = i.find_all("td")
     # print(data)
